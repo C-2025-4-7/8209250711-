@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+class Time
+{
+    private:
+    int hour;
+    int minute;
+    int sec;
+    public:
+    void setting(int h, int m, int s)
+    {
+        hour = h;
+        minute = m;
+        sec = s;
+        cout << hour << ":" << minute << ":" << sec << endl;
+    }
+};
+
+int main()
+{
+    Time t;
+    int h, m, s;
+    cin >> h >> m >> s;
+    t.setting(h, m, s);
+    return 0;
+}

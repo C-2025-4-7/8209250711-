@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+class Cuboid {
+    private:
+    double length;
+    double width;
+    double height;
+
+    public:
+    Cuboid() : length(0), width(0), height(0) {}
+    Cuboid(double l, double w, double h):length(l), width(w), height(h) {}
+
+    void inputDimensions() {
+        cout << "请输入长方柱的长:";
+        cin >> length;
+
+        cout << "请输入长方柱的宽:";
+        cin >> width;
+
+        cout << "请输入长方柱的高:";
+        cin  >> height;
+    }
+
+    double displayVolume() {
+        return length * width * height;
+    }
+    void displayVolume() {
+        double volume = length * width * height;
+        cout << "长方柱的体积为:" << volume << endl;
+    }
+};
+
+int main()
+{
+Cuboid cuboid1, cuboid2, cuboid3;
+
+cuboid1.inputDimensions();
+
+cuboid2.inputDimensions();
+
+cuboid3.inputDimensions();
+
+return 0;
+}
